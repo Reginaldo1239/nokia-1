@@ -1,20 +1,18 @@
 import React from 'react';
-
+import Style from './style.module.css';
 export default function Button (props){
 
     let {number,letters} = props;
 
    const  handlerClick=(numberClick)=>{
-
+        props.onClick(number)
     }
     return (
-        <div class="phone-button">
-                <button   onClick={()=>{props.onClick(number)}} >
+        <div className={Style.phone_button}>
+                <button  className={Style.button}  onClick={()=>{handlerClick(number)}} >
                     <div>{number}</div>
-                    <div>{letters}</div>
-                    
+                    <div className={Style.letter}>{letters}</div>
                     </button>
-                
          </div>
-    )
+    ) 
 }
