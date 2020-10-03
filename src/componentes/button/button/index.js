@@ -5,7 +5,10 @@ export default function Button (props){
     let {number,letters} = props;
 
    const  handlerClick=(numberClick)=>{
+
         props.onClick(number)
+       
+        
     }
     return (
         <div className={Style.phone_button}>

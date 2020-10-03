@@ -4,6 +4,7 @@
 } 
 .button{
     width: 80%;
+    min-height: 35px;
 }
 .letter{
     font-size: 10px;
